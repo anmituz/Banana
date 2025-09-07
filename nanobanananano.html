@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナノバナナナノ完全指南書　</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            color: #34495e;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border: 1px solid #bdc3c7;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #c0392b;
+        }
+        .section-separator {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .toc h2 {
+            margin-top: 0;
+            border-left: none;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .toc li a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #3498db;
+        }
+        .contact a {
+            color: #3498db;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .author-info {
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .author-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #3498db;
+        }
+        .large-image {
+            width: 200px; /* 画像を小さくしました */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 0 auto 20px; /* 中央に配置 */
+            display: block;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .small-image {
+            width: 50px; /* 小さくしたサイズ */
+            height: 50px; /* 小さくしたサイズ */
+            border-radius: 50%;
+            border: 2px solid #3498db;
+        }
+        .iframe-container {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .info-box {
+            background-color: #f3f9ff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .info-box p {
+            margin: 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://static.wikia.nocookie.net/igusuriplease/images/f/fc/Apricot.png/revision/latest?cb=20240418173223" alt="アプリコットの新しい画像" class="main-image">
+
+    <h1>ナノバナナナノ完全指南書</h1>
+    <div class="author-info">
+        <span>作成者：urei0</span>
+        <a href="https://scratch.mit.edu/users/Urei0/" target="_blank">
+            <img src="https://cdn2.scratch.mit.edu/get_image/user/1083905_60x60.png" alt="urei0のアイコン">
+        </a>
+    </div>
+
+    <!-- アプリコの画像(⋈◍＞◡＜◍)。✧♡ -->
+    <img src="https://crimsontech.jp/wp-content/uploads/kiritan-img1024.png" alt="アプリコットの画像" class="large-image">
+
+    <!-- 宣伝用小窓 -->
+    <div class="iframe-container">
+        <p>宣伝(いきなり)w</p>
+         <iframe src="https://turbowarp.org/1210597226/embed" width="482" height="412" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <div class="toc">
+        <h2>目次</h2>
+        <ul>
+            <li><a href="#chap1">第1章：言語の目的と哲学</a></li>
+            <li><a href="#chap2">第2章：基本構文と実行順序</a></li>
+            <li><a href="#chap3">第3章：型システムとグローバル変数</a></li>
+            <li><a href="#chap4">第4章：キャラクター定義とインスタンス</a></li>
+            <li><a href="#chap5">第5章：ページの構造</a></li>
+            <li><a href="#chap6">第6章：コマの配置と座標システム</a></li>
+            <li><a href="#chap7">第7章：背景と情景描写</a></li>
+            <li><a href="#chap8">第8章：セリフと吹き出し</a></li>
+            <li><a href="#chap9">第9章：構図と感情表現</a></li>
+            <li><a href="#chap10">第10章：付録と応用</a></li>
+        </ul>
+    </div>
+
+    <section id="chap1">
+        <h2>第1章：言語の目的と哲学</h2>
+        <h3>1.1 ナノバナナナノとは</h3>
+        <p>ナノバナナナノは、漫画制作に特化した、完全な論理性と厳格な構文を持つプログラミング言語です。その究極の目的は、人間に代わってAIが、創造的かつ再現可能な漫画を生成するための論理的基盤を提供することにあります。この言語は、絵柄、キャラクター、ストーリー、そして感情といった漫画のあらゆる要素を、誰が見ても同じ解釈になるよう、厳密に定義されたコードに変換します。</p>
+        <h3>1.2 哲学：論理的思考の絶対性</h3>
+        <p>ナノバナナナノの核心は、<strong>「あいまいさの絶対的な排除」</strong>にあります。自然言語の持つ多義性や主観性を排し、すべての命令は予測可能で一意の結果を導き出します。もし構文に少しでも矛盾やあいまいさが存在すれば、それはただちにエラーとして認識され、実行は停止します。この厳格なルールは、AIが思考プロセスにおいて迷うことを許さず、与えられたプロンプトに忠実に、完璧な漫画を生成することを保証します。</p>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap2">
+        <h2>第2章：基本構文と実行順序</h2>
+        <h3>2.1 基本的な構文</h3>
+        <p>ナノバナナナノは、Pythonに類似した厳格な構文に基づいています。すべてのコードは、特定のルールに従って記述されなければなりません。</p>
+        <ul>
+            <li><strong>キーワード:</strong> <code>global</code>, <code>page</code>, <code>frame</code>, <code>character</code>, <code>dialogue</code>, <code>background</code>, <code>effect</code>, <code>animate</code>, <code>template</code>などの予約語は、命令の開始を意味します。</li>
+            <li><strong>識別子:</strong> <code>[名前]</code>の形式で、ユーザーが定義する要素（例：<code>[ユキ]</code>）を示します。これは常に一意でなければなりません。</li>
+            <li><strong>辞書型引数:</strong> すべての命令の詳細は、<code>{ キー: 値, ... }</code>という形式で記述します。キーと値の間はコロン（:）、各ペアはカンマ（,）で区切ります。最後のペアの後にカンマは不要です。</li>
+            <li><strong>文字列:</strong> 文字列は必ずダブルクォーテーション（<code>"</code>）で囲みます。</li>
+            <li><strong>コメント:</strong> <code>#</code>で始まる行は、すべてコメントとして扱われ、実行には影響しません。</li>
+        </ul>
+        <h3>2.2 実行順序の絶対性</h3>
+        <p>ナノバナナナノのコードは、以下の厳格な順序で実行されます。この順序を逸脱した場合、コンパイラは実行時エラーを返します。</p>
+        <ol>
+            <li><strong>グローバル設定の定義:</strong> コードの最上部に、作品全体で共有される変数（<code>global</code>キーワードと<code>$</code>プレフィックスを使用）を定義します。</li>
+            <li><strong>キャラクター定義の記述:</strong> グローバル設定の直後に、作品に登場するすべてのキャラクターを<code>@キャラクター定義</code>で一括して記述します。</li>
+            <li><strong>ページの作成:</strong> ストーリーの本体である<code>page</code>を記述します。<code>page</code>は必ず定義済みのグローバル設定やキャラクターを参照します。</li>
+        </ol>
+        <p>この順序は、AIが思考プロセスにおいて階層的なデータ構造を構築し、物語全体の一貫性を保つために不可欠です。</p>
+        <h3>2.3 エラー処理の原則</h3>
+        <p>ナノバナナナノは、あいまいさを許容しません。以下の状況では、必ずエラーが発生し、修正を求めます。</p>
+        <ul>
+            <li><strong>構文エラー:</strong> 構文ルールに従っていない場合。</li>
+            <li><strong>型エラー:</strong> 変数や関数の引数に、宣言された型と異なる型の値を渡した場合。</li>
+            <li><strong>名前の一意性エラー:</strong> 同じ名前の変数、キャラクター、テンプレートを複数回定義した場合。</li>
+            <li><strong>未定義エラー:</strong> 存在しない変数、キャラクター、テンプレート、または型を参照した場合。</li>
+        </ul>
+    </section>
+
+    <hr class="section-separator">
+
+    <!-- 2番目の画像を中央に大きく表示 -->
+    <img src="https://assets.st-note.com/production/uploads/images/19761200/rectangle_large_type_2_b2e485849edadfeaed5235692a65b49c.png?fit=bounds&quality=85&width=1280" alt="二番目の画像" class="large-image">
+
+    <section id="chap3">
+        <h2>第3章：型システムとグローバル変数</h2>
+        <h3>3.1 型システムの絶対性</h3>
+        <p>ナノバナナナノは、強力な型システムを採用しています。これにより、AIがどの情報が何のために使われるかを明確に区別できます。主な型は以下の通りです。</p>
+        <ul>
+            <li><code>string</code>: テキストデータ。例: <code>"ユキ"</code>, <code>"夕焼け"</code>。</li>
+            <li><code>integer</code>: 整数。例: <code>1</code>, <code>10</code>。</li>
+            <li><code>coordinates</code>: 8x16グリッド上の単一の座標。例: <code>50</code>。</li>
+            <li><code>coordinate_range</code>: 座標の範囲。例: <code>"1-32"</code>。</li>
+            <li><code>mood</code>: 定義済みの雰囲気。許容される値: <code>"シリアス"</code>, <code>"コメディ"</code>など。</li>
+            <li><code>style</code>: 定義済みの絵柄。許容される値: <code>"鉛筆画"</code>, <code>"アニメ風"</code>など。</li>
+            <li><code>lighting</code>: 定義済みの光源。許容される値: <code>"逆光"</code>, <code>"順光"</code>など。</li>
+            <li><code>shot</code>: 定義済みの構図。許容される値: <code>"long_shot"</code>, <code>"close_up"</code>など。</li>
+            <li><code>expression</code>: 定義済みの感情。許容される値: <code>"exaltation"</code> (歓喜)、<code>"melancholy"</code> (憂鬱)など。</li>
+        </ul>
+        <h3>3.2 グローバル変数の定義と利用</h3>
+        <p>グローバル変数は、作品全体で共通の設定を格納します。これらは、<code>global</code>キーワードと<code>$</code>プレフィックスを用いて、コードの最上部に一度だけ定義します。</p>
+        <pre><code># グローバル変数の宣言と型指定
+global $art_style: style = "アニメ風"
+global $background_type: string = "公園"
+global $scene_mood: mood = "シリアス"
+
+# 作品の途中でのグローバル変数の再定義は許可されない
+global $art_style: style = "水彩画"  # &lt;- エラー: 再定義は許可されていません</code></pre>
+        <h3>3.3 型不一致のエラー処理</h3>
+        <p>型システムは、意図しないデータの使用を厳しく取り締まります。例えば、<code>mood</code>型に<code>integer</code>型の値を代入しようとすると、コンパイラは即座に型エラーを返します。</p>
+        <pre><code># エラー: `mood`型に`integer`型の値は代入できません
+global $scene_mood: mood = 5  # &lt;-- エラー
+
+# 修正後: 正しい型の値を代入
+global $scene_mood: mood = "コメディ" # OK</code></pre>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap4">
+        <h2>第4章：キャラクター定義とインスタンス</h2>
+        <p>ナノバナナナノにおけるキャラクターは、作品全体で一貫性を保つための厳格なクラスです。すべてのキャラクターは、<code>@キャラクター定義</code>構文を用いて、コードのキャラクター定義の記述セクションで一括して宣言されます。</p>
+        <h3>4.1 @キャラクター定義の構文</h3>
+        <p>キャラクターの定義には、以下の厳格なルールが適用されます。</p>
+        <pre><code># 正しい定義
+@キャラクター定義 [ユキ]{
+    名前: "ユキ",
+    性格: "元気",
+    容姿: "ショートカットの黒髪、制服"
+}
+
+# エラー: 識別子が重複しているため、定義を修正してください。
+# @キャラクター定義 [ユキ]{
+#     名前: "ユキ",
+#     性格: "論理的"
+# }</code></pre>
+        <h3>4.2 キャラクターインスタンスの作成</h3>
+        <p><code>@キャラクター定義</code>で宣言されたキャラクターを、実際にコマ内に配置する際には、<code>character</code>構文を使用します。必須引数は、<strong>一意の識別子</strong>、<strong>位置</strong>、<strong>構図</strong>、<strong>感情</strong>の4つです。</p>
+        <pre><code># コマ内にユキのインスタンスを配置
+frame {
+    座標: "1-32"
+    character [ユキ] {
+        位置: 10,
+        構図: "close_up",
+        感情: "surprise_positive"
+    }
+}
+
+# エラー: 定義されていないキャラクターをインスタンス化しようとしています。
+# character [ヒロシ]{ # &lt;- エラー: `@キャラクター定義 [ヒロシ]`が存在しません
+#    位置: 20,
+#    構図: "medium_shot",
+#    感情: "笑顔"
+# }</code></pre>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap5">
+        <h2>第5章：ページの構造</h2>
+        <p>ナノバナナナノの物語は、<code>page</code>と呼ばれる単位で構成されます。各<code>page</code>は、独立したウィンドウとして機能し、<code>frame</code>や<code>dialogue</code>といった下位の要素を内包する親コンテナです。</p>
+        <h3>5.1 pageの構文と階層構造</h3>
+        <p><code>page [ページ番号] {キー: 値, ...}</code>の構文を使用します。ページ番号は<code>integer</code>型で、1から始まる昇順に記述しなければなりません。</p>
+        <pre><code># 正しいページ構造
+page [1]{
+    # このページに適用される設定
+    フィルター: "sepia" # string型
+    # このページ内のコマ
+    frame {
+        座標: "1-64"
+        # コマ内の要素
+    }
+    frame {
+        座標: "65-128"
+        # コマ内の要素
+    }
+}
+
+# エラー: `page`の外に`frame`は配置できません
+# frame { # &lt;- エラー: `frame`は`page`の中に記述する必要があります
+#    座標: "1-32"
+# }</code></pre>
+        <h3>5.2 pageの属性</h3>
+        <p><code>page</code>は、ページ全体に適用される設定を持つことができます。例：<code>フィルター</code> (<code>"monochrome"</code>, <code>"sepia"</code>など)、<code>照明</code> (<code>lighting</code>型)、<code>気分</code> (<code>mood</code>型)、<code>絵柄</code> (<code>style</code>型)。</p>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap6">
+        <h2>第6章：コマの配置と座標システム</h2>
+        <p>ナノバナナナノのすべてのページは、物理的なサイズに関わらず、論理的に<strong>8x16のグリッド（総マス数128）</strong>として扱われます。このグリッドは、左上を1、右下を128とする絶対座標でナンバリングされています。</p>
+        <h3>6.1 8x16グリッドシステムの絶対性</h3>
+        <p>このグリッドは、漫画ページの「設計図」として機能し、主観的な指示を排除します。<code>frame</code>は、<code>coordinate_range</code>型で定義された、開始座標と終了座標のペアを引数として受け取り、コマの長方形の領域を厳密に定義します。</p>
+        <pre><code># ページ全体を占める大きなコマ
+frame {
+    座標: "1-128"
+    # コマ内の要素
+}
+
+# 左上隅の小さなコマ
+frame {
+    座標: "1-4"
+    # コマ内の要素
+}</code></pre>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap7">
+        <h2>第7章：背景と情景描写</h2>
+        <p>背景は<code>background</code>関数で定義し、詳細な情報を提供します。必須キーは<code>タイプ</code>と<code>詳細</code>の二つです。</p>
+        <pre><code>background {
+    タイプ: "森",
+    詳細: "鬱蒼とした針葉樹林。地面には分厚い苔が生えており、霧が立ち込めている。木々の間からわずかに光が差し込み、神秘的な雰囲気を醸し出している。足元には落ち葉が堆積している。",
+    季節: "冬",
+    時間帯: "夕暮れ時",
+    天気: "雪が降っている"
+}</code></pre>
+        <p><code>詳細</code>には、背景の具体的な情景を非常に長く、詳細に記述します。あいまいな表現は厳禁です。</p>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap8">
+        <h2>第8章：セリフと吹き出し</h2>
+        <p>セリフや心の声は<code>dialogue</code>関数で表現します。必須引数は、<strong>キャラクター</strong>、<strong>内容</strong>、<strong>位置</strong>です。</p>
+        <h3>8.1 dialogue関数の構文</h3>
+        <pre><code>dialogue {
+    キャラクター: @ユキ,
+    内容: "ああ、よかった！",
+    位置: 40
+}</code></pre>
+        <h3>8.2 吹き出しのタイプ</h3>
+        <p><code>タイプ</code>引数を使用することで、感情的なニュアンスを付加できます。例：<code>"叫び"</code>、<code>"独り言"</code>、<code>"小声"</code>、<code>"ロボット"</code>。</p>
+        <pre><code># 叫び声の例
+dialogue {
+    キャラクター: @ユキ,
+    内容: "うそ！信じられない！",
+    位置: 50,
+    タイプ: "叫び"
+}</code></pre>
+        <h3>8.3 文字装飾のオプション</h3>
+        <p><code>フォント</code>、<code>サイズ</code>、<code>強調</code>といったオプションで文字を調整できます。<code>強調</code>は、<code>"bold"</code>、<code>"underline"</code>、<code>"italic"</code>などを指定可能です。</p>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap9">
+        <h2>第9章：構図と感情表現</h2>
+        <p>キャラクターの構図と感情は、<code>character</code>インスタンス内で厳密に定義します。</p>
+        <h3>9.1 構図（shot）</h3>
+        <p><code>shot</code>型は、キャラクターと背景の相対的なサイズやカメラアングルを決定します。例：<code>"long_shot"</code>、<code>"medium_shot"</code>、<code>"close_up"</code>、<code>"dutch_angle"</code>など。</p>
+        <h3>9.2 感情表現（expression）</h3>
+        <p><code>expression</code>型で、キャラクターの表情を具体的に指定し、あいまいな表現を排除します。例：<code>"exaltation"</code> (歓喜)、<code>"melancholy"</code> (憂鬱)、<code>"disgust"</code> (嫌悪感)など。</p>
+        <pre><code>character [ユキ] {
+    位置: 10,
+    構図: "dutch_angle",
+    感情: "fear"
+}</code></pre>
+        <h3>9.3 キャラクターの向き（direction）</h3>
+        <p><code>向き</code>引数（string型）で、キャラクターが向いている方向を指定できます。例：<code>"front"</code>、<code>"back"</code>、<code>"left"</code>、<code>"right"</code>。</p>
+    </section>
+
+    <hr class="section-separator">
+
+    <section id="chap10">
+        <h2>第10章：付録と応用</h2>
+        <h3>10.1 アニメーションと特殊効果</h3>
+        <p><code>effect</code>関数と<code>animate</code>関数を使用し、短い動きや視覚効果を表現できます。<code>effect</code>は<code>"flash"</code>や<code>"shake"</code>といった効果を適用し、<code>animate</code>はキャラクターの表情やポーズの変化を時間軸で記述します。</p>
+        <pre><code># ユキの表情が0.5秒かけて笑顔から困惑に変化
+animate { 対象: @ユキ, 変化: "笑顔->困惑", 期間: "0.5s" }</code></pre>
+        <h3>10.2 テンプレート機能と再利用性</h3>
+        <p><code>template</code>関数で再利用したいコードブロックを定義し、<code>call_template</code>で呼び出します。これにより、コードの重複を避け、効率を向上させることができます。</p>
+        <pre><code># テンプレートの呼び出し
+page [1]{
+    call_template [二人の会話] {
+        キャラA: ユキ,
+        キャラB: アキラ,
+        背景タイプ: "カフェ",
+        背景詳細: "窓から光が差し込む賑やかなカフェ",
+        感情A: 笑顔,
+        セリフA: "元気？",
+        感情B: 無関心,
+        セリフB: "まあね。"
+    }
+}</code></pre>
+        <h3>10.3 ナノバナナナノの未来</h3>
+        <p>将来的には、音声と音楽の同期、物理エンジンの統合、動的なストーリー分岐などの機能が追加される可能性があります。</p>
+    </section>
+    
+    <section id="chap11">
+        <h2>最後に</h2>
+        <p>実験的なので、間違えたりするかも(-_-;)
+        
+    </section>
+
+    <hr class="section-separator">
+
+    <footer class="contact">
+        <p>ここで確認して(↑の文はaiに作らせた半分くらい)：<a href="https://scratch.mit.edu/users/Urei0/">Urei0のページへ飛ぶ</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
